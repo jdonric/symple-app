@@ -4,6 +4,7 @@
   "description": "the symplist app you will ever use. set your mood.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jiell richardson",
