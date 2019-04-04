@@ -2,8 +2,8 @@
   "name": "s-y-m-ple",
   "version": "1.0.0",
   "engines": {
-    "node": "8.12.0",
-    "npm": "6.4.1"
+    "node": "10.15.3",
+    "npm": "6.9.0"
   },
   "description": "the symplist app you will ever use. set your mood.",
   "main": "app.js",
