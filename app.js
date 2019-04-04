@@ -1,7 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
-const PORT = 2500;
+
 
 app.set('view engine', 'ejs');
 
@@ -12,7 +12,7 @@ app.get('/', function(req, res){
     res.render('index');
 });
 
-app.listen(PORT, function (req, res){
-    console.log(`TUNED INTO ${PORT}`);
+app.listen(3000, function (req, res){
+    console.log(`TUNED INTO 3000`);
 });
 
