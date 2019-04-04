@@ -2,144 +2,156 @@
     <head>
         <title>S.Y.M.ple App | Set Your Mood</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
         <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-
+        
         <style>
-                        body {
-                background-image: linear-gradient(#fdfbfb, #ebedee);
-                font-family: 'Work sans', sans-serif;
-                margin:0;
-            }
+        
+        body {
+    background-image: linear-gradient(#fdfbfb, #ebedee);
+    font-family: 'Work sans', sans-serif;
+    margin:0;
+}
 
-            #buttons {
-                width: 25%;
-                margin-left: 10%;
-                margin-top: 5%;
-            }
-
-
-
-            button {
-                background-image: linear-gradient(#e2d1c3, #ebedee);
-                display: block;
-                border-style:none;
-                width: 70%;
-                height:8%;
-                margin-top: 3.5%;
-                border-radius: 25px;
-            padding: 2%;
-                color: darkgrey;
-                -webkit-box-shadow: 4px 4px 3px -6px rgba(97,97,97,1);
-            -moz-box-shadow: 4px 4px 3px -6px rgba(97,97,97,1);
-            box-shadow: 4px 4px 3px -6px rgba(97,97,97,1);
-                letter-spacing: 1.5px;
-                text-align: center;
-                font-size: 0.7em;
-                font-weight: lighter;
-                cursor: pointer;
-            }
-
-            #set-mood {
-                font-weight: lighter;
-                letter-spacing: 2px;
-                color: tan;
-                z-index: 1;
-                text-align: left;
-                margin: 10%;
-                margin-top: 5%;
-            
-
-            }
-
-            #set-mood, #buttons {
-                display: inline-block;
-            }
-
-            #set-mood, iframe {
-                display: inline-block;
-            }
-
-            iframe {
-                position: absolute;
-                width : 35%;
-                z-index: 4;
-                margin-top: 10%;
-                margin-left: 10%;
-                opacity: 0.9;
-                display: none;
-                
-                transition-property: display;
-                transition-duration: 3s;
-                transition-timing-function: ease-in;
-                transition-delay: 1.7s;
-
-            }
-
-
-            footer {
-                bottom: 2;
-                position: absolute;
-                font-size: 10px;
-                margin: 9px;
-                color: darkgrey;
-            }
-
-            a:link {color: darkgrey;}
-
-            a:hover { color: black; cursor: pointer;}
-
-            a:visited { color: tan;}
+#buttons {
+    width: 25%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
 
 
 
+button {
+    background-image: linear-gradient(#e2d1c3, #ebedee);
+    display: block;
+    border-style:none;
+    width: 70%;
+    height:8%;
+    margin-top: 3.5%;
+    border-radius: 25px;
+  padding: 2%;
+    color: darkgrey;
+    -webkit-box-shadow: 4px 4px 3px -6px rgba(97,97,97,1);
+-moz-box-shadow: 4px 4px 3px -6px rgba(97,97,97,1);
+box-shadow: 4px 4px 3px -6px rgba(97,97,97,1);
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: lighter;
+    cursor: pointer;
+}
 
-            /* MOBILE */
-            @media screen and (max-width: 700px) {
+#set-mood {
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: grey;
+    z-index: 1;
+    text-align: left;
+    margin: 10%;
+    margin-top: 5%;
+  
 
-            body {
-                margin: 0;
-            }
-            #set-mood, #buttons {
-                display: block;
-            }
+}
 
-            #set-mood, iframe {
-                display: block;
-            }
+#set-mood, #buttons {
+    display: inline-block;
+}
 
-            iframe {
-                position: absolute;
-                width : 70%;
-                height: 22%;
-                z-index: 4;
-                margin-top: 10%;
-                margin-left: 10%;
-                opacity: 0.9;
-                display: none;
-                
+#set-mood, iframe {
+    display: inline-block;
+}
 
-            }
+iframe {
+    position: absolute;
+    width : 35%;
+    z-index: 4;
+    margin-top: 10%;
+    margin-left: 10%;
+    opacity: 0.9;
+    display: none;
+    
+    -webkit-animation-name: appear;
+  -webkit-animation-duration: 2.5s; 
+  animation-name: appear;
+  animation-duration: 2.5s;
 
-            #set-mood {
-                text-align: center;
-            }
+}
 
-            button{
-                width: 120%;
-            }
+@-webkit-keyframes appear {
+    from {display: none;}
+    to {display: inline}
+  }
+  
+  
+  @keyframes appear {
+    from {display: none;}
+    to {display: inline}
+  }
 
-            #buttons {
-                width : 40%;
-                margin-left: 30%;
-            }
-                
-            }
+
+footer {
+    bottom: 2;
+    position: absolute;
+    font-size: 10px;
+    margin: 9px;
+    color: darkgrey;
+}
+
+a:link {color: darkgrey;}
+
+a:hover { color: black; cursor: pointer;}
+
+a:visited { color: tan;}
+
+
+
+
+/* MOBILE */
+@media screen and (max-width: 700px) {
+
+body {
+    margin: 0;
+}
+#set-mood, #buttons {
+    display: block;
+}
+
+#set-mood, iframe {
+    display: block;
+}
+
+iframe {
+    position: absolute;
+    width : 70%;
+    height: 35%;
+    z-index: 4;
+    margin-top: 10%;
+    margin-left: 10%;
+    opacity: 0.9;
+    display: none;
+    
+
+}
+
+#set-mood {
+    text-align: center;
+}
+
+button{
+    width: 120%;
+}
+
+#buttons {
+    width : 40%;
+    margin-left: 30%;
+}
+    
+  }
         
         </style>
-
     </head>
     <body>
-           <!--<p id="set-mood">What's your current mood?</p>  --> 
+           
 
         <div id="buttons">
                 <p id="set-mood">What's your current mood?</p>
@@ -152,7 +164,7 @@
         <!--fluid-->
             <iframe id="framei" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <br/>
-            <p id="reset" style=" cursor:pointer; text-align:right; font-size: 0.6em; font-weight: lighter; color:tan; margin-right:10%;display: none;">reset</p>
+            <p id="reset" style=" cursor:pointer; text-align:right; font-size: 0.6em; font-weight: lighter; color:grey; margin-right:10%;display: none;">reset</p>
 
 
 
@@ -160,8 +172,10 @@
 
         <footer>by<a href="https://jiellr.com/"> jdonric</a></footer>
 
-<script>
 
+
+
+<script >
 //global variables
 var frame = document.getElementById('framei');
 var vidSource = frame.src;
@@ -177,6 +191,7 @@ var playlist = [
     
 ];
 
+
 //show videos
 function video() {
     resetIt.style.display='block';
@@ -187,19 +202,24 @@ function video() {
 function showFocus() {
     video();
     frame.setAttribute('src', 'https://www.youtube.com/embed/videoseries?list=PLhiCctpaTlfshMq9ZShHZC9dCHVA77p6e');
+    document.body.style.backgroundImage = 'linear-gradient(#93a5cf, #ebedee)';
 };
 function showFluid() {
     video();
     frame.setAttribute('src', 'https://www.youtube.com/embed/videoseries?list=PLhiCctpaTlfvU7_CtGmJpB8cK-tGQ2Z8-');
+    document.body.style.backgroundImage = 'linear-gradient(#13547a, #ebedee)';
 };
 function showBoss() {
     video();
     frame.setAttribute('src', 'https://www.youtube.com/embed/videoseries?list=PLhiCctpaTlfvuTrEMkYUnSZ2bQqdTwlzQ');
+    document.body.style.backgroundImage = 'linear-gradient(#f45c43, #ebedee)';
 };
 function showGroove() {
     video();
     frame.setAttribute('src', 'https://www.youtube.com/embed/videoseries?list=PLhiCctpaTlfsKQbr_M8RMWBUHYZKKqI9I');
+  document.body.style.backgroundImage = 'linear-gradient(#fcb69f, #ebedee)';
 };
+
 
 
 //button click prompts relevant playlist
@@ -219,6 +239,7 @@ function promptPlaylist() {
 function resetPlaylist() {
     resetIt.style.display = 'none';
     frame.style.display ='none';
+    body.style.backgroundImage = 'background-image: linear-gradient(#fdfbfb, #ebedee)';
 }
 
 promptPlaylist();
@@ -228,3 +249,5 @@ resetIt.onclick = resetPlaylist;
 </script>
     </body>
 </html>
+
+
