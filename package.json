@@ -1,0 +1,15 @@
+{
+  "name": "s-y-m-ple",
+  "version": "1.0.0",
+  "description": "the symplist app you will ever use. set your mood.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jiell richardson",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
