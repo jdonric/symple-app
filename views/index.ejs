@@ -3,256 +3,102 @@
         <title>S.Y.M.ple App | Set Your Mood</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-        
-        <meta property="og:title" content="S.Y.M.ple App">
-<meta property="og:description" content="A super S.Y.M.ple desktop mood music app.">
-<meta property="og:image" content="https://res.cloudinary.com/rapha3l/image/upload/v1554377559/Set_Your_Mood_oyrrm3.jpg">
-<meta property="og:url" content="https://bit.ly/2UC9rdz"> 
-        
-        <style>
-        
-        body {
-    background-image: linear-gradient(#fdfbfb, #ebedee);
-    font-family: 'Work sans', sans-serif;
-    margin:0;
-}
-
-#buttons {
-    width: 25%;
-    margin-left: 10%;
-    margin-top: 5%;
-}
-
-
-
-button {
-    background-image: linear-gradient(#e2d1c3, #ebedee);
-    display: block;
-    border-style:none;
-    width: 70%;
-    height:8%;
-    margin-top: 3.5%;
-    border-radius: 25px;
-  padding: 2%;
-    color: darkgrey;
-    -webkit-box-shadow: 4px 4px 3px -6px rgba(97,97,97,1);
--moz-box-shadow: 4px 4px 3px -6px rgba(97,97,97,1);
-box-shadow: 4px 4px 3px -6px rgba(97,97,97,1);
-    letter-spacing: 1.5px;
-    text-align: center;
-    font-size: 0.7em;
-    font-weight: lighter;
-    cursor: pointer;
-}
-
-#set-mood {
-    font-weight: lighter;
-    letter-spacing: 2px;
-    color: grey;
-    z-index: 1;
-    text-align: left;
-    margin: 10%;
-    margin-top: 5%;
-  
-
-}
-
-#set-mood, #buttons {
-    display: inline-block;
-}
-
-#set-mood, iframe {
-    display: inline-block;
-}
-
-iframe {
-    position: absolute;
-    width : 35%;
-    z-index: 4;
-    margin-top: 10%;
-    margin-left: 10%;
-    opacity: 0.9;
-    display: none;
-    
-    -webkit-animation-name: appear;
-  -webkit-animation-duration: 2.5s; 
-  animation-name: appear;
-  animation-duration: 2.5s;
-
-}
-
-@-webkit-keyframes appear {
-    from {display: none;}
-    to {display: inline}
-  }
-  
-  
-  @keyframes appear {
-    from {display: none;}
-    to {display: inline}
-  }
-
-
-footer {
-    bottom: 2;
-    position: absolute;
-    font-size: 10px;
-    margin: 9px;
-    color: darkgrey;
-}
-
-a:link {color: darkgrey;}
-
-a:hover { color: black; cursor: pointer;}
-
-a:visited { color: tan;}
-
-
-
-
-/* MOBILE */
-@media screen and (max-width: 700px) {
-
-body {
-    margin: 0;
-}
-#set-mood, #buttons {
-    display: block;
-}
-
-#set-mood, iframe {
-    display: block;
-}
-
-iframe {
-    position: absolute;
-    width : 70%;
-    height: 35%;
-    z-index: 4;
-    margin-top: 10%;
-    margin-left: 10%;
-    opacity: 0.9;
-    display: none;
-    
-
-}
-
-#set-mood {
-    text-align: center;
-}
-
-button{
-    width: 120%;
-}
-
-#buttons {
-    width : 40%;
-    margin-left: 30%;
-}
-    
-  }
-        
-        </style>
+       
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
            
 
-        <div id="buttons">
-                <p id="set-mood">What's your current mood?</p>
-            <button id="focus">Focused</button>
-            <button id="fluid">Fluid</button>
-            <button id="boss">Boss</button>
-            <button id="groove">Grooved</button>
-        </div>
+        <div class="mood-container">
 
-        <!--fluid-->
-            <iframe id="framei" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br/>
-            <p id="reset" style=" cursor:pointer; text-align:right; font-size: 0.6em; font-weight: lighter; color:grey; margin-right:10%;display: none;">reset</p>
+                    
+                    <div class="mood">
+                            <h1>FOCUS</h1>
+                            <iframe alt="Focus" width="400" height="250" src="https://www.youtube.com/embed/videoseries?list=PLhiCctpaTlfshMq9ZShHZC9dCHVA77p6e" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    </div>
+                
+
+                    <div class="mood">
+                            <h1>FLUID</h1>
+                            <iframe alt="Fluid" width="400" height="250" src="https://www.youtube.com/embed/videoseries?list=PLhiCctpaTlfvU7_CtGmJpB8cK-tGQ2Z8-" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                
+
+                    <div class="mood">
+                            <h1>BOSS</h1>
+                            <iframe alt="Boss" width="400" height="250" src="https://www.youtube.com/embed/videoseries?list=PLhiCctpaTlfvuTrEMkYUnSZ2bQqdTwlzQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+
+                    <div class="mood">
+                            <h1>GROOVE</h1>
+                            <iframe alt="Groove" width="400" height="250" src="https://www.youtube.com/embed/videoseries?list=PLhiCctpaTlfsKQbr_M8RMWBUHYZKKqI9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                
+
+
+                    <!-- arrows 
+                    <a class="left-arrow">&#10094;</a>
+                    <a class="right-arrow" >&#10095;</a>
+                      -->
+
+                  
+          </div>
+          
 
 
 
+          
+          <div class="dot-container">
+                    <span id="1-dot" class="dot" onclick="playingNow(1)"></span> 
+                    <span id="2-dot" class="dot" onclick="playingNow(2)"></span> 
+                    <span id="3-dot" class="dot" onclick="playingNow(3)"></span> 
+                    <span id="4-dot" class="dot" onclick="playingNow(4)"></span> 
+
+                    <br>
+
+                    <footer><a href="https://jiellr.com/"> jiellr</a></footer>
+          </div>
         
 
-        <footer>by<a href="https://jiellr.com/"> jdonric</a></footer>
+
+ <script >
+          //global variables
+var moods = document.getElementsByClassName('mood'); 
+var dots = document.getElementsByClassName("dot");
+var playingIndex = 1;
+var theRight = document.getElementsByClassName('right-arrow');
+var theLeft = document.getElementsByClassName('left-arrow');
 
 
-
-
-<script >
-//global variables
-var frame = document.getElementById('framei');
-var vidSource = frame.src;
-var corpo = document.getElementsByTagName('body');  //corpo is portuguese for body
-var btn = document.getElementsByTagName('button');
-var resetIt = document.getElementById('reset');
-
-var playlist = [
-    'https://www.youtube.com/embed/videoseries?list=PLhiCctpaTlfshMq9ZShHZC9dCHVA77p6e',  //focused
-    'https://www.youtube.com/embed/videoseries?list=PLhiCctpaTlfvU7_CtGmJpB8cK-tGQ2Z8-', //fluid
-    'https://www.youtube.com/embed/videoseries?list=PLhiCctpaTlfvuTrEMkYUnSZ2bQqdTwlzQ', //boss
-    'https://www.youtube.com/embed/videoseries?list=PLhiCctpaTlfsKQbr_M8RMWBUHYZKKqI9I' //grooved
-    
-];
-
-
-//show videos
-function video() {
-    resetIt.style.display='block';
-    frame.style.display = 'inline';
-
+function rightArrow(n) {
+  showMoods(playingIndex += n);
 }
 
-function showFocus() {
-    video();
-    frame.setAttribute('src', 'https://www.youtube.com/embed/videoseries?list=PLhiCctpaTlfshMq9ZShHZC9dCHVA77p6e');
-    document.body.style.backgroundImage = 'linear-gradient(#93a5cf, #ebedee)';
-};
-function showFluid() {
-    video();
-    frame.setAttribute('src', 'https://www.youtube.com/embed/videoseries?list=PLhiCctpaTlfvU7_CtGmJpB8cK-tGQ2Z8-');
-    document.body.style.backgroundImage = 'linear-gradient(#13547a, #ebedee)';
-};
-function showBoss() {
-    video();
-    frame.setAttribute('src', 'https://www.youtube.com/embed/videoseries?list=PLhiCctpaTlfvuTrEMkYUnSZ2bQqdTwlzQ');
-    document.body.style.backgroundImage = 'linear-gradient(#f45c43, #ebedee)';
-};
-function showGroove() {
-    video();
-    frame.setAttribute('src', 'https://www.youtube.com/embed/videoseries?list=PLhiCctpaTlfsKQbr_M8RMWBUHYZKKqI9I');
-  document.body.style.backgroundImage = 'linear-gradient(#fcb69f, #ebedee)';
-};
-
-
-
-//button click prompts relevant playlist
-function promptPlaylist() {
-    var one = document.getElementById('focus');
-    var two = document.getElementById('fluid');
-    var three = document.getElementById('boss');
-    var four = document.getElementById('groove');
-
-    one.onclick = showFocus;
-    two.onclick = showFluid;
-    three.onclick = showBoss;
-    four.onclick = showGroove;
-
-};
-
-function resetPlaylist() {
-    resetIt.style.display = 'none';
-    frame.style.display ='none';
-    body.style.backgroundImage = 'background-image: linear-gradient(#fdfbfb, #ebedee)';
+function playingNow(n) {
+  showMoods(playingIndex = n);
 }
 
-promptPlaylist();
-resetIt.onclick = resetPlaylist;
+function showMoods(n) {
+  var i;
+  
+  if (n > moods.length) {playingIndex = 1}    
+  if (n < 1) {playingIndex = moods.length}
+  for (i = 0; i < moods.length; i++) {
+      moods[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  moods[playingIndex-1].style.display = "block";  
+  dots[playingIndex-1].className += " active";
+}
 
 
+showMoods(playingNow);
+theLeft.onclick = rightArrow(-1);
+theRight.onclick = rightArrow(1);
 </script>
     </body>
 </html>
-
-
