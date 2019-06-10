@@ -1,140 +1,168 @@
 body {
-    background-image: linear-gradient(#fdfbfb, #ebedee);
     font-family: 'Work sans', sans-serif;
     margin:0;
-}
-
-#buttons {
-    width: 25%;
-    margin-left: 10%;
-    margin-top: 5%;
-}
-
-
-
-button {
-    background-image: linear-gradient(#e2d1c3, #ebedee);
-    display: block;
-    border-style:none;
-    width: 70%;
-    height:8%;
-    margin-top: 3.5%;
-    border-radius: 25px;
-  padding: 2%;
-    color: darkgrey;
-    -webkit-box-shadow: 4px 4px 3px -6px rgba(97,97,97,1);
--moz-box-shadow: 4px 4px 3px -6px rgba(97,97,97,1);
-box-shadow: 4px 4px 3px -6px rgba(97,97,97,1);
-    letter-spacing: 1.5px;
-    text-align: center;
-    font-size: 0.7em;
     font-weight: lighter;
-    cursor: pointer;
+    background-size: cover;
+    background-color: #f876de;
+    background-image: linear-gradient(315deg, #f4791f 0%,#659999 74%);
+
 }
 
-#set-mood {
+h1 {
+    font-size: 82px;
+    font-family: 'Work Sans', sans-serif;
     font-weight: lighter;
-    letter-spacing: 2px;
-    color: grey;
-    z-index: 1;
-    text-align: left;
-    margin: 10%;
-    margin-top: 5%;
-  
-
-}
-
-#set-mood, #buttons {
-    display: inline-block;
-}
-
-#set-mood, iframe {
-    display: inline-block;
+    top: 2.5;
+    position: relative;
+    letter-spacing: 14px;
+    color:  whitesmoke;
+    
 }
 
 iframe {
-    position: absolute;
-    width : 35%;
-    z-index: 4;
-    margin-top: 10%;
-    margin-left: 10%;
-    opacity: 0.9;
+    margin: -8px;
+}
+
+.mood-container {
+    width: 100%;
+    margin: auto;
+    display: auto;
+
+}
+
+/* Slides */
+.mood {
     display: none;
-    
-    -webkit-animation-name: appear;
-  -webkit-animation-duration: 2.5s; 
-  animation-name: appear;
-  animation-duration: 2.5s;
-
-}
-
-@-webkit-keyframes appear {
-    from {display: none;}
-    to {display: inline}
+    padding: 35px;
+    text-align: center;
+    -webkit-transition: display 2s ease;
+    transition: display 2s ease;
   }
   
-  
-  @keyframes appear {
-    from {display: none;}
-    to {display: inline}
-  }
-
-
-footer {
-    bottom: 2;
+  /* Next & previous buttons */
+  .left-arrow, .right-arrow {
+    cursor: pointer;
     position: absolute;
-    font-size: 10px;
-    margin: 9px;
-    color: darkgrey;
-}
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -30px;
+    padding: 2.5%;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+    user-select: none;
+  }
 
-a:link {color: darkgrey;}
+  .left-arrow {
+      left: 10;
+      font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+  }
+  
+  /* Position the "next button" to the right */
+  .right-arrow {
+    position: absolute;
+    right: 10;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .left-arrow:hover, .right-arrow:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    transition: background-color 0.8s ease;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+      text-align: center;
+      padding-bottom: 2.5%;
+      padding-top: 2%;
 
-a:hover { color: black; cursor: pointer;}
+      bottom: 0;
+      width: 100%;
+      position:absolute;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.8s ease;
+  }
 
-a:visited { color: tan;}
+ dot:hover,  .active{
+          background-color: lightslategray !important;
+  }
+
+  
+
+  
+  
+
+  footer {
+      font-size: 11px;
+    text-align: left;
+    left: 25;
+    position: absolute;
+  }
+  
+  a:link {
+    color: lightgrey;
+
+  }
+
+  a:hover {
+    cursor: pointer;
+    color: peachpuff;
+  }
+
+  a:visited {
+    color:whitesmoke;
+  }
+ 
+
+
 
 
 
 
 /* MOBILE */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
+    body {
+        font-family: 'Work sans', sans-serif;
+        margin:0;
+        font-weight: lighter;
+        background-size: cover;
+        background-attachment: no-repeat;
 
-body {
-    margin: 0;
-}
-#set-mood, #buttons {
-    display: block;
-}
+        background-color: #659999 ;
+ 
+    }
 
-#set-mood, iframe {
-    display: block;
-}
+    .mood {
+      margin:auto;
+      display: block;
+      width:100%;
+    }
 
-iframe {
-    position: absolute;
-    width : 70%;
-    height: 35%;
-    z-index: 4;
-    margin-top: 10%;
-    margin-left: 10%;
-    opacity: 0.9;
-    display: none;
-    
+    iframe {
+      margin: auto;
+      display:block;
+  }
 
-}
 
-#set-mood {
-    text-align: center;
-}
 
-button{
-    width: 120%;
-}
-
-#buttons {
-    width : 40%;
-    margin-left: 30%;
-}
     
   }
